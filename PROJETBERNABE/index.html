@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernabe Depannage - Accueil</title>
+    <meta name="description" content="Bernabe Depannage : gestion des services, employes, materiels, clients et interventions de depannage.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="site">
+
+<header class="site-header">
+    <div class="site-container site-nav">
+        <a class="brand" href="index.html">
+            <span class="brand-mark" style="color:#fff">B</span>
+            <span class="brand-text"><strong>Bernabe</strong><small>Entreprise de depannage</small></span>
+        </a>
+        <nav class="site-links">
+            <a href="#metier">Metier</a>
+            <a href="#modules">Modules</a>
+            <a href="#regles">Regles de gestion</a>
+        </nav>
+        <a class="btn btn-primary" href="dashboard.php">Acceder a l'application</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="site-container hero-grid">
+        <div>
+            <span class="eyebrow">Systeme d'information - Base de donnees MySQL</span>
+            <h1>Pilotez vos interventions de depannage de bout en bout.</h1>
+            <p>Services, personnel, gros materiel, qualifications, clients et interventions reunis dans une seule application web connectee a la base de donnees de l'entreprise.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="dashboard.php">Ouvrir le tableau de bord</a>
+                <a class="btn btn-light" href="rapports.php">Consulter les rapports</a>
+            </div>
+        </div>
+        <div class="hero-panel">
+            <h3>Perimetre de la base</h3>
+            <div class="hero-panel-row"><span>Tables relationnelles</span><strong>11</strong></div>
+            <div class="hero-panel-row"><span>Services specialises</span><strong>10</strong></div>
+            <div class="hero-panel-row"><span>Employes</span><strong>40</strong></div>
+            <div class="hero-panel-row"><span>Materiels references</span><strong>30</strong></div>
+            <div class="hero-panel-row"><span>Requetes de direction</span><strong>R1 a R9</strong></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="metier">
+    <div class="site-container">
+        <div class="section-head">
+            <h2>Le metier</h2>
+            <p>L'entreprise possede plusieurs services specialises. Chaque intervention est demandee par un client, dirigee par un responsable et decomposee en actes de depannage realises par les employes.</p>
+        </div>
+        <div class="features">
+            <div class="card feature">
+                <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1"/><path d="M17 4a4 4 0 0 1 0 8"/><path d="M22 21v-1a6 6 0 0 0-4-5.6"/></svg></div>
+                <h3>Organisation</h3>
+                <p>Services, fonctions, hierarchie entre employes et salaire calcule selon la fonction et l'anciennete.</p>
+            </div>
+            <div class="card feature">
+                <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
+                <h3>Parc materiel</h3>
+                <p>Gros materiels references comme un tout ou par composants, avec les qualifications requises.</p>
+            </div>
+            <div class="card feature">
+                <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v3M11 11v7M15 7v11M19 4v14"/></svg></div>
+                <h3>Activite et couts</h3>
+                <p>Interventions, actes de depannage, participations datees et cout total par intervention.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt" id="modules">
+    <div class="site-container">
+        <div class="section-head">
+            <h2>Modules de l'application</h2>
+            <p>Chaque module permet de consulter, creer, modifier et supprimer les donnees, avec controle des contraintes d'integrite.</p>
+        </div>
+        <div class="features">
+            <a class="card feature" href="services.php"><h3>Services</h3><p>Services specialises et effectifs.</p></a>
+            <a class="card feature" href="fonctions.php"><h3>Fonctions et salaires</h3><p>Fonctions et grilles salariales par anciennete.</p></a>
+            <a class="card feature" href="employes.php"><h3>Employes</h3><p>Personnel, superieurs et subalternes.</p></a>
+            <a class="card feature" href="materiels.php"><h3>Materiels</h3><p>Fiches materiel et arborescence des composants.</p></a>
+            <a class="card feature" href="qualifications.php"><h3>Qualifications</h3><p>Habilitations des employes par materiel.</p></a>
+            <a class="card feature" href="clients.php"><h3>Clients</h3><p>Portefeuille clients et historique.</p></a>
+            <a class="card feature" href="interventions.php"><h3>Interventions</h3><p>Actes, intervenants et couts.</p></a>
+            <a class="card feature" href="rapports.php"><h3>Rapports</h3><p>Requetes R1 a R9 et export CSV.</p></a>
+            <a class="card feature" href="dashboard.php"><h3>Tableau de bord</h3><p>Indicateurs cles de l'activite.</p></a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="regles">
+    <div class="site-container">
+        <div class="section-head">
+            <h2>Regles de gestion appliquees</h2>
+            <p>Les regles de l'enonce sont garanties par la structure de la base et par les controles de l'application.</p>
+        </div>
+        <div class="rules">
+            <div class="card rule"><span class="rule-code">RG1</span><p>Les employes ont une fonction, eventuellement un superieur et des subalternes.</p></div>
+            <div class="card rule"><span class="rule-code">RG2</span><p>Tous les salaries ne sont pas qualifies pour l'utilisation de tout le materiel.</p></div>
+            <div class="card rule"><span class="rule-code">RG3</span><p>Un materiel complexe est reference comme un tout et, le cas echeant, par composants.</p></div>
+            <div class="card rule"><span class="rule-code">RG4</span><p>Une intervention de depannage se fait toujours a la demande d'un client.</p></div>
+            <div class="card rule"><span class="rule-code">RG5</span><p>Une intervention se fait sous la direction d'un responsable.</p></div>
+            <div class="card rule"><span class="rule-code">RG6</span><p>Une intervention se decompose en un certain nombre d'actes de depannage.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt cta">
+    <div class="site-container">
+        <h2>Pret a demarrer ?</h2>
+        <p>Accedez au tableau de bord pour suivre l'activite en temps reel.</p>
+        <a class="btn btn-primary" href="dashboard.php" style="height:44px; padding:0 22px">Acceder a l'application</a>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="site-container">
+        <span>Bernabe Depannage</span>
+        <span>TP Base de donnees - HTML, CSS, PHP, MySQL</span>
+    </div>
+</footer>
+
+</body>
+</html>
