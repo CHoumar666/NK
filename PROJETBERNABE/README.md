@@ -34,8 +34,15 @@ PROJETBERNABE/
 |-- includes/             Gabarits et fonctions communes
 |-- assets/css/style.css  Feuille de style
 |-- assets/js/app.js      Comportements d'interface
-`-- database/bernabe.sql  Script de creation et d'insertion
+|-- database/bernabe.sql  Script de creation et d'insertion
+`-- docs/
+    |-- Rapport_PFE_Bernabe.docx   Rapport PFE (Word)
+    |-- captures/                  Captures d'ecran des interfaces
+    `-- sujet/                     Sujet du TP et consignes du tableau
 ```
+
+Le dossier `docs` n'est pas utilise par le site : il peut rester dans
+`C:\wamp\www\PROJETBERNABE` sans gener son fonctionnement.
 
 ## Fonctionnalites
 
